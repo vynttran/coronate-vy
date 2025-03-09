@@ -53,18 +53,7 @@ module Splash = {
       </div>
       <footer className={"pages__footer body-20"}>
         <div className="pages__footer-left">
-          <p> {React.string("Do you enjoy using Coronate?")} </p>
-          <p>
-            <a href="https://www.buymeacoffee.com/johnridesabike" target="_blank">
-              <img
-                src=Utils.WebpackAssets.buyMeACoffee
-                alt="Buy Me A Coffee"
-                height="60"
-                width="217"
-                style={ReactDOM.Style.make(~height="60px ", ~width="217px ", ())}
-              />
-            </a>
-          </p>
+           <img src=Utils.WebpackAssets.qGlogo alt="" height="96" width="192" />
         </div>
         <div className="pages__footer-right">
           <p> {React.string(`Copyright ${HtmlEntities.copy} John Jackson.`)} </p>
