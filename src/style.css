@@ -67,6 +67,7 @@ body {
   padding: 0;
   height: 100vh;
   overflow: hidden;
+  background-color: #1D3557;
 }
 
 #root {
