@@ -32,6 +32,8 @@
   --font-caption-30: 15px;
   --font-caption-20: 13px;
   --font-caption-10: 11px;
+  --grey-90: #f6f6f6;
+  --grey-10: #1D3557; 
 }
 
 @media print {
@@ -78,7 +80,7 @@ svg {
 }
 
 .content {
-  background-color: var(--white-100);
+  background-color: var(--grey-100);
   border-radius: 4px;
 }
 
@@ -175,12 +177,12 @@ code {
 *******************************************************************************/
 
 a {
-  color: var(--blue-60);
+  color: #7ECAEB;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--blue-60);
+  color: #7ECAEB;
   text-decoration: underline;
 }
 
