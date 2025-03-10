@@ -159,7 +159,7 @@ code {
 .caption-30 {
   font-size: var(--font-caption-30);
   font-weight: 400;
-  color: var(--grey-50);
+  color: #e5edfa;
 }
 
 .caption-20 {
@@ -741,7 +741,7 @@ li.player.missing {
 }
 
 [data-reach-tab][aria-selected="true"] {
-  color: var(--blue-60);
+  color: #7ecaeb;
   border-bottom-color: var(--blue-50);
 }
 
@@ -754,6 +754,7 @@ li.player.missing {
 }
 
 [data-reach-tab][disabled] {
+  color: #e5edfa;
   background-color: transparent;
 }
 
@@ -936,9 +937,10 @@ li.player.missing {
 ### PageTourneyScores
 *******************************************************************************/
 
-.pagescores__table {
+.pagescores__table td {
   border-collapse: collapse;
   width: min-content;
+  color: #1D3557
 }
 
 .pagescores__topheader {
@@ -946,7 +948,7 @@ li.player.missing {
 }
 
 .pagescores__row:nth-of-type(even) {
-  background-color: var(--white-100);
+  background-color: #7ECAEB;
 }
 
 .pagescores__row:nth-of-type(odd) {
@@ -968,13 +970,13 @@ li.player.missing {
 
 .pagescores__playername {
   text-align: left;
-  color: var(--grey-90);
+  color: #1D3557;
   white-space: nowrap;
 }
 
 .pagescores__rank {
   text-align: center;
-  color: var(--grey-90);
+  color: #1D3557;
 }
 
 .pagescores__number {
