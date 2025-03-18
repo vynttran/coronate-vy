@@ -202,7 +202,7 @@ hr {
 }
 
 .selected {
-  background-color: var(--grey-20);
+  background-color: var(--grey-60);
   box-shadow: var(--selected-box-shadow);
 }
 
@@ -323,10 +323,11 @@ hr {
 }
 
 .win__about-dialog {
-  background-color: var(--grey-20);
+  background-color: #1D3557;
 }
 
 [data-reach-dialog-content] {
+  background-color: #1D3557;
   width: calc(80vw - 2rem);
 }
 
@@ -471,7 +472,7 @@ button,
 input[type="submit"],
 .button {
   color: var(--grey-90);
-  background-color: var(--grey-90-a10);
+  background-color: var(--blue-70);
   border-radius: 2px;
   height: 32px;
   padding: 0 8px;
@@ -518,7 +519,7 @@ input[type="submit"].button-primary:focus {
 button:hover,
 input[type="submit"]:hover,
 .button:hover {
-  background: var(--grey-90-a20);
+  background: var(--blue-60);
 }
 
 button:active,
@@ -538,12 +539,12 @@ input[type="submit"]:focus,
 [disabled],
 .disabled,
 .window-blur button {
-  opacity: 0.4;
+  background-color: var(--blue-60);
 }
 
 .button-ghost {
   font-size: 16px;
-  color: var(--grey-90-a80);
+  color: var(--white);
   background-color: transparent;
   border: none;
   height: 32px;
@@ -578,7 +579,7 @@ button[disabled]:hover,
 input[type="text"][disabled]:hover,
 .disabled:hover {
   border-color: transparent;
-  background-color: var(--grey-90-a10);
+  background: var(--blue-70);
 }
 
 .button-ghost svg {
@@ -646,7 +647,7 @@ input:focus {
 }
 
 fieldset {
-  background-color: var(--white-100);
+  background-color: #1D3557;
   border-color: var(--grey-40);
   border-width: 1px;
   border-radius: 4px;
@@ -725,7 +726,7 @@ li.player.missing {
   border-bottom-style: solid;
   border-bottom-color: transparent;
   background-color: transparent;
-  color: var(--grey-90-a80);
+  color: var(--white);
   padding: 16px 8px;
   height: auto;
   font-size: 1em;
@@ -946,13 +947,13 @@ li.player.missing {
   vertical-align: bottom;
 }
 
-.pagescores__row:nth-of-type(even) {
+/* .pagescores__row:nth-of-type(even) {
   background-color: var(--white-100);
 }
 
 .pagescores__row:nth-of-type(odd) {
   background-color: var(--grey-20);
-}
+} */
 
 .pagescores__row-td {
   border-width: 1px;
@@ -964,7 +965,8 @@ li.player.missing {
   border-bottom-style: solid;
   border-width: 1px;
   border-color: var(--grey-40);
-  background-color: var(--white-100);
+  border-style: solid;
+  /* background-color: var(--white-100); */
 }
 
 .pagescores__playername {

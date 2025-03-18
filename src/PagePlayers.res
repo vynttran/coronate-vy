@@ -376,6 +376,7 @@ module PlayerList = {
         <caption> {React.string("Player roster")} </caption>
         <thead>
           <tr>
+            <th> {React.string("#")} </th> /* New Ranking Column */
             <th>
               <Hooks.SortButton data=sorted dispatch=sortDispatch sortColumn=sortFirstName>
                 {React.string("First name")}
@@ -402,8 +403,9 @@ module PlayerList = {
           </tr>
         </thead>
         <tbody className="content">
-          {Array.map(sorted.table, p =>
+          {Array.mapWithIndex(sorted.table, (index, p) =>
             <tr key={p.id->Data.Id.toString}>
+              <td className="table__number"> {(index + 1)->React.int} </td> /* Ranks players */
               <td className="table__player" colSpan=2>
                 <Link to_=Player(p.id)> {p->Player.fullName->React.string} </Link>
               </td>
@@ -741,8 +743,8 @@ let make = (~id=?, ~windowDispatch) => {
   let {items: players, dispatch: playersDispatch, _} = Db.useAllPlayers()
   let (sorted, sortDispatch) = Hooks.useSortedTable(
     ~table=Map.valuesToArray(players),
-    ~column=sortFirstName,
-    ~isDescending=false,
+    ~column=sortRating,
+    ~isDescending=true,
   )
   React.useEffect2(() => {
     sortDispatch(SetTable(Map.valuesToArray(players)))
