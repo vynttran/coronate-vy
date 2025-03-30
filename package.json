@@ -42,6 +42,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.7",
     "bfj": "^7.0.2",
+    "bs-fetch": "^0.6.2",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^3.4.1",
